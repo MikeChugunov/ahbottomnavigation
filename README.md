@@ -1,18 +1,13 @@
 
-# AHBottomNavigation
+# Legacy AHBottomNavigation
 Library to implement the Bottom Navigation component from Material Design guidelines (minSdkVersion=14).
 
 ## Demo
 <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo1.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo2.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo3.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo4.gif" width="208" height="368" />
 
-## What's new (2.1.0) - [Changelog](https://github.com/mikechugunov/ahbottomnavigation/blob/master/CHANGELOG.md)
-* Update libraries versions
-* Add enable/disable tab state (with custom color)
-* Add new xml attributes (`colored`, `accentColor`, `inactiveColor`, `disableColor`, `coloredActive`, `coloredInactive`)
-* Add param `notificationAnimationDuration`
-* Update getDrawable method with `AppCompatResources.getDrawable(context, drawableRes);`
-If you use drawable selector and target API < 21, don't forget to add this:
-`AppCompatDelegate.setCompatVectorFromResourcesEnabled(true); `
+## What's new (2.1.0.1) - [Changelog](https://github.com/mikechugunov/ahbottomnavigation/blob/master/CHANGELOG.md)
+* Update compile versions
+* Merge original PR-276 to support selected icon state
 
 ## Features
 * Follow the bottom navigation guidelines (https://www.google.com/design/spec/components/bottom-navigation.html)
@@ -27,8 +22,16 @@ If you use drawable selector and target API < 21, don't forget to add this:
 
 ### Gradle
 ```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+```groovy
 dependencies {
-    compile 'com.mikechugunov:ahbottomnavigation:2.1.0'
+    implementation 'com.github.MikeChugunov:ahbottomnavigation:2.1.0.1'
 }
 ```
 ### XML

@@ -1,6 +1,11 @@
 ## Changelog
 
-### Newest version: 2.1.0
+### Newest version: 2.1.0.1
+
+* Update compile versions
+* Merge original PR-276 to support selected icon state
+
+### 2.1.0
 
 * Update libraries versions
 * Add enable/disable tab state (with custom color)
