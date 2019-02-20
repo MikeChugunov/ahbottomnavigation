@@ -1,4 +1,4 @@
-package com.aurelhubert.ahbottomnavigation;
+package com.mikechugunov.ahbottomnavigation;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -18,7 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Interpolator;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation.OnNavigationPositionListener;
+import com.mikechugunov.ahbottomnavigation.AHBottomNavigation.OnNavigationPositionListener;
 
 /**
  *

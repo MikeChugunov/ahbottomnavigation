@@ -1,4 +1,4 @@
-package com.aurelhubert.ahbottomnavigation;
+package com.mikechugunov.ahbottomnavigation;
 
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;

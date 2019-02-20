@@ -1,4 +1,4 @@
-package com.aurelhubert.ahbottomnavigation;
+package com.mikechugunov.ahbottomnavigation;
 
 import android.content.Context;
 import android.content.res.Resources;

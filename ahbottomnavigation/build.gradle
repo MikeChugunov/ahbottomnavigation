@@ -4,20 +4,20 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'ah-bottom-navigation'
 
-    publishedGroupId = 'com.aurelhubert'
+    publishedGroupId = 'com.mikechugunov'
     libraryName = 'AHBottomNavigation'
     artifact = 'ahbottomnavigation'
 
     libraryDescription = 'A library to reproduce the behavior of the Bottom Navigation guidelines from Material Design.'
 
-    siteUrl = 'https://github.com/aurelhubert/ahbottomnavigation'
-    gitUrl = 'https://github.com/aurelhubert/ahbottomnavigation.git'
+    siteUrl = 'https://github.com/mikechugunov/ahbottomnavigation'
+    gitUrl = 'https://github.com/mikechugunov/ahbottomnavigation.git'
 
     libraryVersion = '2.1.0'
 
-    developerId = 'aurelhubert'
-    developerName = 'Aurelien Hubert'
-    developerEmail = 'aurel.hubert@gmail.com'
+    developerId = 'mikechugunov'
+    developerName = 'Mike Chugunov'
+    developerEmail = 'mike.chugunov@yandex.ru'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -25,13 +25,13 @@ ext {
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 40
+        versionCode 41
         versionName "2.1.0"
     }
     buildTypes {

@@ -3,9 +3,9 @@
 Library to implement the Bottom Navigation component from Material Design guidelines (minSdkVersion=14).
 
 ## Demo
-<img src="https://raw.githubusercontent.com/aurelhubert/ahbottomnavigation/master/demo1.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/aurelhubert/ahbottomnavigation/master/demo2.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/aurelhubert/ahbottomnavigation/master/demo3.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/aurelhubert/ahbottomnavigation/master/demo4.gif" width="208" height="368" />
+<img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo1.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo2.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo3.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo4.gif" width="208" height="368" />
 
-## What's new (2.1.0) - [Changelog](https://github.com/aurelhubert/ahbottomnavigation/blob/master/CHANGELOG.md)
+## What's new (2.1.0) - [Changelog](https://github.com/mikechugunov/ahbottomnavigation/blob/master/CHANGELOG.md)
 * Update libraries versions
 * Add enable/disable tab state (with custom color)
 * Add new xml attributes (`colored`, `accentColor`, `inactiveColor`, `disableColor`, `coloredActive`, `coloredInactive`)
@@ -28,12 +28,12 @@ If you use drawable selector and target API < 21, don't forget to add this:
 ### Gradle
 ```groovy
 dependencies {
-    compile 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    compile 'com.mikechugunov:ahbottomnavigation:2.1.0'
 }
 ```
 ### XML
 ```xml
-<com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+<com.mikechugunov.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -47,7 +47,7 @@ OR
 
     ...
 
-    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+    <com.mikechugunov.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -153,7 +153,7 @@ Feel free to create issues / pull requests.
 ## License
 ```
 AHBottomNavigation library for Android
-Copyright (c) 2017 Aurelien Hubert (http://github.com/aurelhubert).
+Copyright (c) 2017 Aurelien Hubert (http://github.com/mikechugunov).
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

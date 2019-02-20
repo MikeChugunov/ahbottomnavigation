@@ -1,4 +1,4 @@
-package com.aurelhubert.ahbottomnavigation.notification;
+package com.mikechugunov.ahbottomnavigation.notification;
 
 import android.os.Parcel;
 import android.os.Parcelable;
