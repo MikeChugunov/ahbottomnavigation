@@ -405,7 +405,6 @@ public class AHBottomNavigation extends FrameLayout {
 			TextView title = (TextView) view.findViewById(R.id.bottom_navigation_item_title);
 			TextView notification = (TextView) view.findViewById(R.id.bottom_navigation_notification);
 
-			icon.setImageDrawable(item.getDrawable(context));
 			title.setText(item.getTitle(context));
 
 			if (titleTypeface != null) {
@@ -421,6 +420,7 @@ public class AHBottomNavigation extends FrameLayout {
 					view.setSelected(true);
 				}
 				icon.setSelected(true);
+				icon.setImageDrawable(item.getSelectedDrawable(context));
 				// Update margins (icon & notification)
 				if (view.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
 					ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) icon.getLayoutParams();
@@ -435,6 +435,7 @@ public class AHBottomNavigation extends FrameLayout {
 				}
 			} else {
 				icon.setSelected(false);
+				icon.setImageDrawable(item.getDrawable(context));
 				ViewGroup.MarginLayoutParams paramsNotification = (ViewGroup.MarginLayoutParams)
 						notification.getLayoutParams();
 				paramsNotification.setMargins(notificationInactiveMarginLeft, paramsNotification.topMargin,
@@ -459,7 +460,7 @@ public class AHBottomNavigation extends FrameLayout {
 						current ? itemActiveColor : itemInactiveColor, forceTint));
 			} else {
 				if (current) {
-					icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getSelectedDrawable(context)));
+					icon.setImageDrawable(items.get(i).getSelectedDrawable(context));
 				}
 			}
 
@@ -473,13 +474,9 @@ public class AHBottomNavigation extends FrameLayout {
 						updateItems(itemIndex, true);
 					}
 				});
-				icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getDrawable(context),
-						current ? itemActiveColor : itemInactiveColor, forceTint));
 				title.setTextColor(current ? itemActiveColor : itemInactiveColor);
 				view.setSoundEffectsEnabled(soundEffectsEnabled);
 			} else {
-				icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getDrawable(context),
-						itemDisableColor, forceTint));
 				title.setTextColor(itemDisableColor);
 			}
 
@@ -534,7 +531,6 @@ public class AHBottomNavigation extends FrameLayout {
 			ImageView icon = (ImageView) view.findViewById(R.id.bottom_navigation_small_item_icon);
 			TextView title = (TextView) view.findViewById(R.id.bottom_navigation_small_item_title);
 			TextView notification = (TextView) view.findViewById(R.id.bottom_navigation_notification);
-			icon.setImageDrawable(item.getDrawable(context));
 
 			if (titleState != TitleState.ALWAYS_HIDE) {
 				title.setText(item.getTitle(context));
@@ -553,6 +549,7 @@ public class AHBottomNavigation extends FrameLayout {
 					view.setSelected(true);
 				}
 				icon.setSelected(true);
+				icon.setImageDrawable(item.getSelectedDrawable(context));
 				// Update margins (icon & notification)
 
 				if (titleState != TitleState.ALWAYS_HIDE) {
@@ -570,6 +567,7 @@ public class AHBottomNavigation extends FrameLayout {
 				}
 			} else {
 				icon.setSelected(false);
+				icon.setImageDrawable(item.getDrawable(context));
 				ViewGroup.MarginLayoutParams paramsNotification = (ViewGroup.MarginLayoutParams)
 						notification.getLayoutParams();
 				paramsNotification.setMargins(notificationInactiveMarginLeft, notificationInactiveMarginTop,
@@ -592,10 +590,6 @@ public class AHBottomNavigation extends FrameLayout {
 			if (forceTint) {
 				icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getDrawable(context),
 						current ? itemActiveColor : itemInactiveColor, forceTint));
-			} else {
-				if (current) {
-					icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getSelectedDrawable(context)));
-				}
 			}
 
 			title.setTextColor(current ? itemActiveColor : itemInactiveColor);
@@ -609,8 +603,6 @@ public class AHBottomNavigation extends FrameLayout {
 			view.setSoundEffectsEnabled(soundEffectsEnabled);
 
 			if (itemsEnabledStates[i]) {
-				icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getDrawable(context),
-						currentItem == i ? itemActiveColor : itemInactiveColor, forceTint));
 				title.setTextColor(currentItem == i ? itemActiveColor : itemInactiveColor);
 				title.setAlpha(currentItem == i ? 1 : 0);
 				view.setOnClickListener(new OnClickListener() {
@@ -621,8 +613,6 @@ public class AHBottomNavigation extends FrameLayout {
 				});
 				view.setSoundEffectsEnabled(soundEffectsEnabled);
 			} else {
-				icon.setImageDrawable(AHHelper.getTintDrawable(items.get(i).getDrawable(context),
-						itemDisableColor, forceTint));
 				title.setTextColor(itemDisableColor);
 				title.setAlpha(0);
 			}

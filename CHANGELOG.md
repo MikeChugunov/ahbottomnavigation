@@ -1,6 +1,10 @@
 ## Changelog
 
-### Newest version: 2.1.0.1
+### Newest version: 2.1.0.2
+
+* fixed initial selectedTab image was tinted
+
+### 2.1.0.1
 
 * Update compile versions
 * Merge original PR-276 to support selected icon state

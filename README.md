@@ -5,9 +5,8 @@ Library to implement the Bottom Navigation component from Material Design guidel
 ## Demo
 <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo1.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo2.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo3.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo4.gif" width="208" height="368" />
 
-## What's new (2.1.0.1) - [Changelog](https://github.com/mikechugunov/ahbottomnavigation/blob/master/CHANGELOG.md)
-* Update compile versions
-* Merge original PR-276 to support selected icon state
+## What's new (2.1.0.2) - [Changelog](https://github.com/mikechugunov/ahbottomnavigation/blob/master/CHANGELOG.md)
+* fixed initial selectedTab image was tinted
 
 ## Features
 * Follow the bottom navigation guidelines (https://www.google.com/design/spec/components/bottom-navigation.html)
