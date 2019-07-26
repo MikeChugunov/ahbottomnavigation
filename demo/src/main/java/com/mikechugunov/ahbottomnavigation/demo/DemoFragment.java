@@ -19,7 +19,7 @@ import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.mikechugunov.ahbottomnavigation.AHBottomNavigation;
 
 import java.util.ArrayList;
 import java.util.List;

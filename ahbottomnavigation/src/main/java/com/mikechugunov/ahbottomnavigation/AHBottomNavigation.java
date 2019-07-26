@@ -109,7 +109,7 @@ public class AHBottomNavigation extends FrameLayout {
 	private float titleActiveTextSize, titleInactiveTextSize;
 	private int bottomNavigationHeight, navigationBarHeight = 0;
 	private float selectedItemWidth, notSelectedItemWidth;
-	private boolean forceTint = true;
+	private boolean forceTint = false;
 	private TitleState titleState = TitleState.SHOW_WHEN_ACTIVE;
 
 	// Notifications

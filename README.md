@@ -1,5 +1,5 @@
 
-# AHBottomNavigation
+# AHBottomNavigation with Selected Drawable
 Library to implement the Bottom Navigation component from Material Design guidelines (minSdkVersion=14).
 
 **Warning: For >= 2.3.0, you need to use AndroidX in your project**
@@ -8,7 +8,10 @@ Library to implement the Bottom Navigation component from Material Design guidel
 <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo1.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo2.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo3.gif" width="208" height="368" /> <img src="https://raw.githubusercontent.com/mikechugunov/ahbottomnavigation/master/demo4.gif" width="208" height="368" />
 
 ## What's new (2.3.4.1) - [Changelog](https://github.com/aurelhubert/ahbottomnavigation/blob/master/CHANGELOG.md)
-* Mergeto upstream 2.3.4 with selected icon
+* Merge upstream to 2.3.4
+* Restore selectedDrawable
+* remove unwanted gradle properties
+* update deps and gradle
 
 ## Features
 * Follow the bottom navigation guidelines (https://www.google.com/design/spec/components/bottom-navigation.html)
@@ -32,7 +35,7 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    implementation 'com.github.MikeChugunov:ahbottomnavigation:2.1.0.1'
+    implementation 'com.github.MikeChugunov:ahbottomnavigation:2.3.4.1'
 }
 ```
 ### XML

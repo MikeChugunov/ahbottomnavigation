@@ -1,6 +1,12 @@
 ## Changelog
 
-### Newest version: 2.3.4
+### Newest version: 2.3.4.1
+* Merge upstream to 2.3.4
+* Restore selectedDrawable
+* remove unwanted gradle properties
+* update deps and gradle
+
+### 2.3.4
 * Fix a bug with the disappearing animation for the notification
 
 ### 2.3.3
@@ -40,7 +46,7 @@
 * Add param `notificationAnimationDuration`
 * Update getDrawable method with `AppCompatResources.getDrawable(context, drawableRes);`
 If you use drawable selector and target API < 21, don't forget to add this:
-`AppCompatDelegate.setCompatVectorFromResourcesEnabled(true); `
+`AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);`
 
 ### 2.0.6
 
