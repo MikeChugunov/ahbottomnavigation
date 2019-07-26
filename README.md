@@ -1,4 +1,4 @@
-
+[![](https://jitpack.io/v/MikeChugunov/ahbottomnavigation.svg)](https://jitpack.io/#MikeChugunov/ahbottomnavigation)
 # AHBottomNavigation with Selected Drawable
 Library to implement the Bottom Navigation component from Material Design guidelines (minSdkVersion=14).
 
